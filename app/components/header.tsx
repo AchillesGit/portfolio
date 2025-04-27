@@ -1,0 +1,94 @@
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
+
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className='p-4 border-b'>
+      <nav className='flex justify-between items-center'>
+        <div className='text-lg font-bold'>Logo</div>
+        <div className='hidden md:flex gap-4'>
+          <Link
+            href='/'
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Startseite
+          </Link>
+          <Link
+            href='/profil'
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Über mich
+          </Link>
+          <Link
+            href='/leistungen'
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Leistungen
+          </Link>
+          <Link
+            href='/projekte'
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Projekte
+          </Link>
+          <Link
+            href='/kontakt'
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Kontakt
+          </Link>
+        </div>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className='md:hidden text-2xl text-gray-300 hover:text-gray-50 transition-colors cursor-pointer'
+          aria-label='Menü öffnen oder schließen'
+        >
+          <FiMenu />
+        </button>
+      </nav>
+      {menuOpen && (
+        <div className='flex flex-col mt-4 space-y-2 md:hidden'>
+          <Link
+            href='/'
+            onClick={() => setMenuOpen(false)}
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Startseite
+          </Link>
+          <Link
+            href='/profil'
+            onClick={() => setMenuOpen(false)}
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Über mich
+          </Link>
+          <Link
+            href='/leistungen'
+            onClick={() => setMenuOpen(false)}
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Leistungen
+          </Link>
+          <Link
+            href='/projekte'
+            onClick={() => setMenuOpen(false)}
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Projekte
+          </Link>
+          <Link
+            href='/kontakt'
+            onClick={() => setMenuOpen(false)}
+            className='transition-colors text-gray-300 hover:text-gray-50'
+          >
+            Kontakt
+          </Link>
+        </div>
+      )}
+    </header>
+  );
+}

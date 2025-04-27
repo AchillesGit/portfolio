@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Header from "./components/header";
+import { Footer } from "./components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,16 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className='p-4'>
-          <nav className='flex gap-4'>
-            <Link href='/'>Startseite</Link>
-            <Link href='/profil'>Über mich</Link>
-            <Link href='/leistungen'>Leistungen</Link>
-            <Link href='/projekte'>Projekte</Link>
-            <Link href='/kontakt'>Kontakt</Link>
-          </nav>
-        </header>
+        <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
