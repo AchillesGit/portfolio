@@ -2,16 +2,16 @@ import { AvailabilityBadge } from "./availabilityBadge";
 
 export function Hero() {
   return (
-    <section className='py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white text-center'>
-      <div className='container mx-auto px-4'>
-        <h1 className='text-4xl md:text-6xl font-bold mb-6'>
-          Maßgeschneiderte Fullstack-Lösungen mit Next.js
-        </h1>
-        <p className='text-xl md:text-2xl mb-8'>
-          Interaktive Dashboards und skalierbare Webanwendungen mit Next.js –
-          für klare Einblicke und smarte Entscheidungen.
-        </p>
+    <section className='pt-34 pb-30 text-white w-10/12'>
+      <div className='container mx-auto'>
         <AvailabilityBadge />
+        <h1 className='text-4xl md:text-6xl font-bold mb-8'>
+          Moderne Fullstack-Lösungen für dein Business
+        </h1>
+        <p className='text-xl md:text-2xl mb-8 text-gray-400'>
+          Ich bin Dennis, Webentwickler mit Leidenschaft für smarte Dashboards
+          und nutzerzentrierte Business-Tools.
+        </p>
       </div>
     </section>
   );

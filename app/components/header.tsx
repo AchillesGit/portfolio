@@ -7,9 +7,8 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className='p-4 border-b'>
-      <nav className='flex justify-between items-center'>
-        <div className='text-lg font-bold'>Logo</div>
+    <header className='p-2 w-full z-50'>
+      <nav className='flex justify-end items-center'>
         <div className='hidden md:flex gap-4'>
           <Link
             href='/'
@@ -51,7 +50,7 @@ export default function Header() {
         </button>
       </nav>
       {menuOpen && (
-        <div className='flex flex-col mt-4 space-y-2 md:hidden'>
+        <div className='flex flex-col mt-2 space-y-2 md:hidden bg-black/5 backdrop-blur-md p-4 rounded-md shadow-md'>
           <Link
             href='/'
             onClick={() => setMenuOpen(false)}

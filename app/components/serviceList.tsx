@@ -38,7 +38,7 @@ export function ServiceList() {
           {services.map((service, index) => (
             <div
               key={index}
-              className='bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow'
+              className='bg-gray-800 text-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow'
             >
               <div className='text-4xl mb-4 flex justify-center'>
                 {service.icon}

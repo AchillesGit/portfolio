@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaXing } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <footer className='text-gray-300 py-6'>
+    <footer className='text-gray-300 py-6 mt-12'>
       <p className='text-sm mb-4 md:mb-0 text-center'>
         &copy; {new Date().getFullYear()} Dennis Sadiki. Alle Rechte
         vorbehalten.
