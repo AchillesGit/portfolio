@@ -21,19 +21,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang='de'>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-black via-gray-900 to-black`}
+        className={`
+          ${geistSans.variable} ${geistMono.variable}
+          antialiased
+          bg-gradient-to-br from-black via-gray-900 to-black
+          bg-fixed bg-no-repeat bg-cover
+
+          flex flex-col min-h-screen
+        `}
       >
         <Header />
-        <main>{children}</main>
+
+        {/* flex-1 sorgt dafür, dass main den Platz füllt */}
+        <main className='flex-1'>{children}</main>
+
         <Footer />
       </body>
     </html>
