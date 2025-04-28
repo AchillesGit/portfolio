@@ -42,10 +42,7 @@ export default function Contact() {
             required
           ></textarea>
         </div>
-        <button
-          className='bg-blue-500 text-white px-6 py-3 rounded'
-          type='submit'
-        >
+        <button className='bg-blue-500 px-6 py-3 rounded' type='submit'>
           Senden
         </button>
       </form>

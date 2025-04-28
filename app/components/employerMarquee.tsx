@@ -8,9 +8,9 @@ const employers = [
 
 export const EmployerMarquee = () => {
   return (
-    <section className='py-12 text-white relative w-screen -ms-24'>
+    <section className='py-12 relative w-screen -ms-24'>
       <h2 className='text-center text-2xl font-bold mb-6'>
-        Diese Unternehmen vertrauen auf meine Arbeit
+        Diese Unternehmen habe ich bereits bei Projekten unterstützt
       </h2>
       <Marquee gradient={false} speed={50} pauseOnHover={true} autoFill>
         {employers.map((name, index) => (

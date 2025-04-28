@@ -2,9 +2,11 @@ import { AvailabilityBadge } from "./availabilityBadge";
 
 export function Hero() {
   return (
-    <section className='pt-34 pb-30 text-white w-10/12'>
+    <section className='pt-34 pb-30 w-10/12'>
       <div className='container mx-auto'>
-        <AvailabilityBadge />
+        <div className='mb-10'>
+          <AvailabilityBadge />
+        </div>
         <h1 className='text-4xl md:text-6xl font-bold mb-8'>
           Moderne Fullstack-Lösungen für dein Business
         </h1>

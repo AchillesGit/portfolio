@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FiBarChart2, FiDatabase, FiZap } from "react-icons/fi";
 
 interface ServiceItem {
@@ -32,20 +33,22 @@ export function ServiceList() {
     <section className='py-20'>
       <div className='container mx-auto px-4 text-center'>
         <h2 className='text-3xl md:text-4xl font-bold mb-10'>
-          So kann ich dein Projekt unterstützen
+          So bringe ich dein Projekt voran{" "}
         </h2>
         <div className='grid gap-8 md:grid-cols-3'>
           {services.map((service, index) => (
-            <div
+            <Link
               key={index}
-              className='bg-gray-800 text-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow'
+              href='/leistungen'
+              className='bg-gray-800 rounded-lg shadow-md p-8 
+                transition-colors duration-300 hover:bg-gray-700 hover:text-gray-200 block'
             >
               <div className='text-4xl mb-4 flex justify-center'>
                 {service.icon}
               </div>
               <h3 className='text-xl font-semibold mb-2'>{service.title}</h3>
               <p className='text-gray-400'>{service.description}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
