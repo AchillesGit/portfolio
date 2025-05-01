@@ -1,8 +1,10 @@
 "use server";
-import nodemailer from "nodemailer";
-import { redirect } from "next/navigation";
 
-export async function sendMail(formData: FormData) {
+import nodemailer from "nodemailer";
+
+export async function sendMail(
+  formData: FormData
+): Promise<{ status: "success" | "error" }> {
   const { name, email, message } = Object.fromEntries(formData) as {
     name: string;
     email: string;
@@ -27,9 +29,9 @@ export async function sendMail(formData: FormData) {
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
       replyTo: email,
     });
-    redirect("/kontakt?status=success");
+    return { status: "success" };
   } catch (error) {
     console.error("Mail-Versand fehlgeschlagen:", error);
-    redirect("/kontakt?status=error");
+    return { status: "error" };
   }
 }

@@ -33,7 +33,7 @@ export default function Projekte() {
           ]}
         />
 
-        <ul className='list-disc marker:text-blue-400 space-y-3 mt-6 ps-4'>
+        <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
             Entwicklung eines zentralen Portals zur Konsolidierung aller
             internen Anwendungen.
@@ -95,7 +95,7 @@ export default function Projekte() {
         />
 
         {/* Bullet Points */}
-        <ul className='list-disc marker:text-blue-400 space-y-3 mt-6 ps-4'>
+        <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
             Entwicklung eines internen GPT-Portals für tausende tägliche Nutzer
             mit individuell konfigurierbaren Assistenten.
@@ -158,7 +158,7 @@ export default function Projekte() {
           ]}
         />
 
-        <ul className='list-disc marker:text-blue-400 space-y-3 mt-6 ps-4'>
+        <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
             Entwicklung eines interaktiven Dashboards zur Visualisierung und
             Analyse interner Events bei KPMG.
@@ -220,7 +220,7 @@ export default function Projekte() {
           ]}
         />
 
-        <ul className='list-disc marker:text-blue-400 space-y-3 mt-6 ps-4'>
+        <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
             Migration auf neueste Angular- & PrimeNG-Version inkl. Behebung von
             Breaking Changes.
@@ -282,7 +282,7 @@ export default function Projekte() {
           ]}
         />
 
-        <ul className='list-disc marker:text-blue-400 space-y-3 mt-6 ps-4'>
+        <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
             Migration vom klassischen MERN‑Stack zu Next.js & Prisma zur
             Verbesserung von Performance, Developer Experience und SEO.
@@ -336,7 +336,7 @@ export default function Projekte() {
         />
 
         {/* Bullet Points */}
-        <ul className='list-disc marker:text-blue-400 space-y-3 mt-6 ps-4'>
+        <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
             Eigenständige Konzeption und Entwicklung einer PWA zum privaten
             Foto- und Erlebnis‑Journaling.
