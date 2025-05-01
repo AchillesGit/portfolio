@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaXing } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -28,13 +28,11 @@ export const Footer = () => {
           <FaLinkedin size={24} />
         </Link>
         <Link
-          href='https://www.xing.com/profile/dein-xing-profil'
-          aria-label='Xing'
-          target='_blank'
-          rel='noopener noreferrer'
+          href='/kontakt'
+          aria-label='Kontakt'
           className='hover:text-white transition-colors'
         >
-          <FaXing size={24} />
+          <FaEnvelope size={24} />
         </Link>
       </div>
     </footer>

@@ -7,7 +7,7 @@ export default function Projekte() {
       <section className='p-8 rounded-2xl max-w-3xl mx-auto'>
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
-            <h2 className='text-3xl font-bold'>Advoservice Portal</h2>
+            <h2 className='text-3xl font-bold'>Advoservice: Portal</h2>
             <p className='text-blue-400 mt-1'>Frontend-Experte & UX-Designer</p>
           </div>
           <p className='text-gray-400 mt-4 md:mt-0'>Jan 2025 – laufend</p>
@@ -40,14 +40,14 @@ export default function Projekte() {
           </li>
           <li>
             Architektur und Umsetzung des Frontends mit React, Context API,
-            Tailwind & DevExtreme.
+            Tailwind und DevExtreme.
           </li>
           <li>
             Migration zweier komplexer Legacy-Systeme als moderne SPAs mit
             Self-Service Features.
           </li>
           <li>
-            Einführung von Rollen-/Rechtemanagement & Beitrag zur
+            Einführung von Rollen-/Rechtemanagement und Beitrag zur
             Backend-Optimierung.
           </li>
           <li>
@@ -71,7 +71,7 @@ export default function Projekte() {
       <section className='p-8 rounded-2xl max-w-3xl mx-auto'>
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
-            <h2 className='text-3xl font-bold'>KPMG – Internes GPT-Portal</h2>
+            <h2 className='text-3xl font-bold'>KPMG: Internes GPT-Portal</h2>
             <p className='text-blue-400 mt-1'>Frontend Experte (Angular)</p>
           </div>
           <p className='text-gray-400 mt-4 md:mt-0'>Feb – Dez 2024</p>
@@ -102,7 +102,7 @@ export default function Projekte() {
           </li>
           <li>
             Komplette Neuentwicklung der Frontend-Architektur inkl. sauberes
-            State Management & modulare Komponentenstruktur.
+            State Management und modulare Komponentenstruktur.
           </li>
           <li>
             Umsetzung einer modernen, konsistenten UI gemäß Corporate Design in
@@ -110,10 +110,10 @@ export default function Projekte() {
           </li>
           <li>
             Integration von Funktionen wie Dokumenten-Upload, konfigurierbare
-            GPT-Logik & eingebettetem PDF-Viewer.
+            GPT-Logik und eingebettetem PDF-Viewer.
           </li>
           <li>
-            Internationale Zusammenarbeit mit Entwicklerteam aus Bulgarien &
+            Internationale Zusammenarbeit mit Entwicklerteam aus Bulgarien und
             tägliche Abstimmung im Scrum-Prozess (Englisch).
           </li>
         </ul>
@@ -134,7 +134,7 @@ export default function Projekte() {
       <section className='p-8 rounded-2xl max-w-3xl mx-auto'>
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
-            <h2 className='text-3xl font-bold'>KPMG – Event-Dashboard</h2>
+            <h2 className='text-3xl font-bold'>KPMG: Event-Dashboard</h2>
             <p className='text-blue-400 mt-1'>Frontend Entwickler (Angular)</p>
           </div>
           <p className='text-gray-400 mt-4 md:mt-0'>Sep 2023 – Jan 2024</p>
@@ -177,7 +177,7 @@ export default function Projekte() {
           </li>
           <li>
             Enge Zusammenarbeit mit Stakeholdern im Rahmen eines initialen
-            Anforderungsworkshops & wöchentlicher Abstimmungen (Scrum).
+            Anforderungsworkshops und wöchentlicher Abstimmungen (Scrum).
           </li>
         </ul>
 
@@ -197,7 +197,7 @@ export default function Projekte() {
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
             <h2 className='text-3xl font-bold'>
-              KPMG – Thought Leadership Tool
+              KPMG: Thought Leadership Tool
             </h2>
             <p className='text-blue-400 mt-1'>Frontend Developer (Angular)</p>
           </div>
@@ -222,23 +222,23 @@ export default function Projekte() {
 
         <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
-            Migration auf neueste Angular- & PrimeNG-Version inkl. Behebung von
-            Breaking Changes.
+            Migration auf neueste Angular- und PrimeNG-Version inkl. Behebung
+            von Breaking Changes.
           </li>
           <li>
             Umsetzung eines rollenbasierten Formulars zur Erfassung von Thought
             Leadership-Inhalten.
           </li>
           <li>
-            Berechtigungslogik via SharePoint (PnPjs) clientseitig eingebunden &
-            dynamisch umgesetzt.
+            Berechtigungslogik via SharePoint (PnPjs) clientseitig eingebunden
+            und dynamisch umgesetzt.
           </li>
           <li>
             Kontinuierliche UI-Optimierungen und Anpassungen an interne
             Marketingprozesse.
           </li>
           <li>
-            Enge Zusammenarbeit mit Stakeholdern in Workshops & Weekly Reviews
+            Enge Zusammenarbeit mit Stakeholdern in Workshops und Weekly Reviews
             (Scrum).
           </li>
         </ul>
@@ -260,7 +260,7 @@ export default function Projekte() {
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
             <h2 className='text-3xl font-bold'>
-              Hobby Rezeptplattform – Tech-Migration & Auth
+              Hobby Rezeptplattform: Tech-Migration & Auth
             </h2>
             <p className='text-blue-400 mt-1'>Fullstack Entwickler (Next.js)</p>
           </div>
@@ -284,8 +284,8 @@ export default function Projekte() {
 
         <ul className='list-disc marker:text-teal-600 space-y-3 mt-6 ps-4'>
           <li>
-            Migration vom klassischen MERN‑Stack zu Next.js & Prisma zur
-            Verbesserung von Performance, Developer Experience und SEO.
+            Migration vom klassischen MERN‑Stack zu Next.js und Prisma zur
+            Verbesserung von Performance und Developer Experience.
           </li>
           <li>
             Implementierung von NextAuth mit rollenbasierter Zugriffslogik.
@@ -316,7 +316,7 @@ export default function Projekte() {
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
             <h2 className='text-3xl font-bold'>
-              Hobby PWA – Foto- & Erlebnis-Journal
+              Hobby PWA: Foto- & Erlebnis-Journal
             </h2>
             <p className='text-blue-400 mt-1'>Fullstack Entwicklung (Solo)</p>
           </div>
@@ -342,11 +342,11 @@ export default function Projekte() {
             Foto- und Erlebnis‑Journaling.
           </li>
           <li>
-            Sicherer Bild- und Datenupload via Firebase Auth (Whitelist) & Blob
-            Storage.
+            Sicherer Bild- und Datenupload via Firebase Auth (Whitelist) und
+            Blob Storage.
           </li>
           <li>
-            Durchführung von zwei Testrunden mit über 100 Einträgen & 200+
+            Durchführung von zwei Testrunden mit über 100 Einträgen und 200+
             Bildern inkl. Nutzerfeedback.
           </li>
           <li>

@@ -52,9 +52,10 @@ export default function About() {
 
           {/* Bio */}
           <p className='text-lg'>
-            Hi, ich bin Dennis Sadiki, 28 Jahre alt, Webentwickler mit B.Sc in
-            Wirtschaftsinformatik. Seit fünf Jahren baue ich Webanwendungen –
-            heute vor allem mit React, Next.js und dem T3-Stack.
+            Hi, <br />
+            ich bin Dennis Sadiki, Webentwickler mit B.Sc in
+            Wirtschaftsinformatik und seit fünf Jahren baue ich Webanwendungen.
+            Heute vor allem mit React, Next.js sowie dem T3-Stack.
           </p>
 
           <p className='text-lg'>
@@ -82,7 +83,7 @@ export default function About() {
           <p className='text-lg'>
             Und wenn der Laptop mal zu bleibt, findest du mich meistens beim
             Sport – ob im Gym oder auf dem Fahrrad. Bewegung ist für mich der
-            beste Ausgleich zum Coden.
+            schönste Ausgleich zum Coden.
           </p>
         </div>
       </div>
