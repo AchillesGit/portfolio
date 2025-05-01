@@ -2,9 +2,9 @@ import { AvailabilityBadge } from "./availabilityBadge";
 
 export function Hero() {
   return (
-    <section className='pt-34 pb-30 w-10/12'>
+    <section className='pt-10 px-8 md:pt-34 md:pb-30 w-10/12 md:px-20'>
       <div className='container mx-auto'>
-        <div className='mb-10'>
+        <div className='mb-4 md:mb-10'>
           <AvailabilityBadge />
         </div>
         <h1 className='text-4xl md:text-6xl font-bold mb-8'>
