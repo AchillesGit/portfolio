@@ -5,8 +5,15 @@ export const Footer = () => {
   return (
     <footer className='text-gray-300 mb-6 mt-18'>
       <p className='text-sm mb-4 md:mb-0 text-center'>
-        &copy; {new Date().getFullYear()} Dennis Sadiki. Alle Rechte
-        vorbehalten.
+        &copy; {new Date().getFullYear()} Dennis Sadiki - Alle Rechte
+        vorbehalten -{" "}
+        <Link
+          href='/impressum'
+          aria-label='Impressum'
+          className='text-sm hover:text-white transition-colors font-bold'
+        >
+          Impressum
+        </Link>
       </p>
       <div className='flex gap-3 justify-center mt-2'>
         <Link
