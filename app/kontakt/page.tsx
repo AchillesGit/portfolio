@@ -1,49 +1,12 @@
-// app/kontakt/page.tsx
-"use server";
+"use client";
 
-import nodemailer from "nodemailer";
-import { redirect } from "next/navigation";
+import { sendMail } from "./sendMail";
+import { useSearchParams } from "next/navigation";
 
-export async function sendMail(formData: FormData) {
-  const { name, email, message } = Object.fromEntries(formData) as {
-    name: string;
-    email: string;
-    message: string;
-  };
-
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
-  });
-
-  try {
-    await transporter.sendMail({
-      from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER,
-      subject: `Neue Nachricht von ${name} <${email}>`,
-      text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
-      replyTo: email,
-    });
-    redirect("/kontakt?status=success");
-  } catch (error) {
-    console.error("Mail-Versand fehlgeschlagen:", error);
-    redirect("/kontakt?status=error");
-  }
-}
-
-interface KontaktPageProps {
-  searchParams: { status?: "success" | "error" };
-}
-
-export default async function KontaktPage({ searchParams }: KontaktPageProps) {
-  const status = await searchParams.status;
-
-  console.log(searchParams);
+export default function KontaktPage() {
+  const searchParams = useSearchParams();
+  const status = searchParams.get("status") || null; // Safely access search params
+  console.log(status);
 
   return (
     <div className='min-h-screen p-8'>
