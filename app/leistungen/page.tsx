@@ -48,7 +48,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className='p-20 fade-in'>
+    <section className='p-4 md:p-20 fade-in'>
       <div className='container mx-auto px-4 text-center'>
         <h2 className='text-3xl md:text-4xl font-bold mb-10'>
           Moderne Webentwicklung auf den Punkt{" "}

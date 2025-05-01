@@ -50,39 +50,39 @@ export default function Header() {
         </button>
       </nav>
       {menuOpen && (
-        <div className='flex flex-col mt-2 space-y-2 md:hidden bg-black/5 backdrop-blur-md p-4 rounded-md shadow-md'>
+        <div className='flex flex-col absolute end-4 top-10 items-end space-y-2 md:hidden fade-in bg-black/9 backdrop-blur-md rounded-md shadow-xl w-full h-full'>
           <Link
             href='/'
             onClick={() => setMenuOpen(false)}
-            className='transition-colors text-gray-300 hover:text-gray-50'
+            className='text-white'
           >
             Startseite
           </Link>
           <Link
             href='/profil'
             onClick={() => setMenuOpen(false)}
-            className='transition-colors text-gray-300 hover:text-gray-50'
+            className='text-white'
           >
             Über mich
           </Link>
           <Link
             href='/leistungen'
             onClick={() => setMenuOpen(false)}
-            className='transition-colors text-gray-300 hover:text-gray-50'
+            className='text-white'
           >
             Leistungen
           </Link>
           <Link
             href='/projekte'
             onClick={() => setMenuOpen(false)}
-            className='transition-colors text-gray-300 hover:text-gray-50'
+            className='text-white'
           >
             Projekte
           </Link>
           <Link
             href='/kontakt'
             onClick={() => setMenuOpen(false)}
-            className='transition-colors text-gray-300 hover:text-gray-50'
+            className='text-white'
           >
             Kontakt
           </Link>

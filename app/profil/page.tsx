@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className='py-12 px-6  fade-in'>
+    <section className='py-6 md:py-12 px-6  fade-in'>
       <div className='max-w-4xl mx-auto grid md:grid-cols-3 gap-8'>
         <div className='flex flex-col items-center space-y-4'>
           {/* Avatar */}
@@ -36,13 +36,15 @@ export default function About() {
         </div>
 
         <div className='md:col-span-2 flex flex-col space-y-6'>
-          <div>
+          <div className='flex md:justify-start justify-center'>
             <AvailabilityBadge />
           </div>
 
           {/* Name & Role */}
           <div>
-            <h1 className='text-7xl font-bold leading-tight'>Dennis Sadiki</h1>
+            <h1 className='text-6xl md:text-7xl font-bold leading-tight'>
+              Dennis Sadiki
+            </h1>
             <p className='text-3xl text-gray-400 mt-1'>
               Fullstack Webdeveloper
             </p>
