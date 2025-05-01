@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <div className='min-h-screen p-8'>
+    <div className='min-h-screen p-8  fade-in'>
       <h1 className='text-4xl font-bold mb-4'>Leistungen</h1>
       <ul className='list-disc list-inside'>
         <li>Entwicklung von Webanwendungen mit React, Next.js und Angular</li>

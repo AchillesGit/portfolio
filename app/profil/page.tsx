@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className='py-12 px-6'>
+    <section className='py-12 px-6  fade-in'>
       <div className='max-w-4xl mx-auto grid md:grid-cols-3 gap-8'>
         <div className='flex flex-col items-center space-y-4'>
           {/* Avatar */}

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition, useRef } from "react";
-import { motion } from "framer-motion";
 import { sendMail } from "./sendMail";
 
 export default function KontaktPage() {
@@ -20,26 +19,14 @@ export default function KontaktPage() {
   };
 
   return (
-    <motion.div
-      className='flex justify-center'
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
+    <div className='flex justify-center fade-in'>
       <div className='w-full max-w-lg rounded-2xl shadow-xl p-8'>
         <h1 className='text-4xl font-extrabold mb-6 text-gray-100'>Kontakt</h1>
         <p className='text-lg mb-6'>
           Bereit für dein nächstes Web-Projekt? Lass uns loslegen!
         </p>
 
-        <motion.form
-          ref={formRef}
-          action={handleAction}
-          className='space-y-4'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
+        <form ref={formRef} action={handleAction} className='space-y-4'>
           <div>
             <label
               htmlFor='name'
@@ -96,7 +83,7 @@ export default function KontaktPage() {
           >
             {isPending ? "Senden…" : "Senden"}
           </button>
-        </motion.form>
+        </form>
 
         {status === "success" && (
           <p className='mt-4 text-green-400 font-medium'>
@@ -110,6 +97,6 @@ export default function KontaktPage() {
           </p>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }

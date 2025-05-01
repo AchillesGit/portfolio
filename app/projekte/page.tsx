@@ -3,7 +3,7 @@ import TechBadges from "../components/techBadges";
 
 export default function Projekte() {
   return (
-    <>
+    <div className='fade-in'>
       <section className='p-8 rounded-2xl max-w-3xl mx-auto'>
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
           <div>
@@ -366,6 +366,6 @@ export default function Projekte() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
