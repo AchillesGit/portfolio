@@ -8,17 +8,17 @@ export default function Impressum() {
       <p className='mb-4'>
         Dennis Sadiki
         <br />
-        Musterstraße 123
+        Seelenbinder Straße 134
         <br />
-        12345 Musterstadt
+        12555 Berlin
         <br />
       </p>
       <p className='mb-4'>
         <strong>Kontakt:</strong>
         <br />
-        Telefon: +49 123 456789
+        Telefon: +49 1525 8667891
         <br />
-        E-Mail: info@dennis-sadiki.de
+        E-Mail: dennisadiki@gmail.com
         <br />
       </p>
       <p className='mb-4'>
@@ -26,9 +26,9 @@ export default function Impressum() {
         <br />
         Dennis Sadiki
         <br />
-        Musterstraße 123
+        Seelenbinder Straße 134
         <br />
-        12345 Musterstadt
+        12555 Berlin
         <br />
       </p>
     </section>

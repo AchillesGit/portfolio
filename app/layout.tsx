@@ -26,8 +26,7 @@ export default function RootLayout({
       </head>
       <body className='antialiased bg-gradient-to-br from-black via-gray-900 to-black bg-fixed bg-no-repeat bg-cover flex flex-col min-h-screen '>
         <Header />
-        {/* flex-1 sorgt dafür, dass main den Platz füllt */}
-        <main className='flex-1'>{children}</main>
+        <main className='flex-1 flex flex-col'>{children}</main>
         <Footer />
       </body>
     </html>

@@ -24,10 +24,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className='p-4 md:p-20 fade-in'>
-      <div className='container mx-auto px-4 text-center'>
-        <h2 className='text-3xl md:text-4xl font-bold mb-10'>
-          Moderne Webentwicklung auf den Punkt{" "}
+    <section className='p-4 md:p-20 fade-in md:grow md:flex md:items-center'>
+      <div className='container mx-auto px-4 text-center md:max-w-300'>
+        <h2 className='text-3xl md:text-4xl font-bold mb-10 md:mb-14'>
+          Moderne Webentwicklung auf den Punkt
         </h2>
         <div className='grid gap-8 md:grid-cols-3'>
           {services.map((service, index) => (

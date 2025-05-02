@@ -7,7 +7,11 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className='p-2 w-full z-50'>
+    <header
+      className={`md:relative sticky top-0 md:bg-transparent p-2 w-full z-50 ${
+        menuOpen ? "" : "bg-black/9 backdrop-blur-md"
+      }`}
+    >
       <nav className='flex justify-end items-center'>
         <div className='hidden md:flex gap-4'>
           <Link
@@ -50,40 +54,23 @@ export default function Header() {
         </button>
       </nav>
       {menuOpen && (
-        <div className='flex flex-col absolute end-4 top-10 items-end space-y-2 md:hidden fade-in bg-black/9 backdrop-blur-md rounded-md shadow-xl w-full h-full'>
-          <Link
-            href='/'
-            onClick={() => setMenuOpen(false)}
-            className='text-white'
-          >
+        <div
+          onClick={() => setMenuOpen(false)}
+          className='fixed inset-0 flex flex-col space-y-2 md:hidden fade-in w-full h-screen bg-black/50 backdrop-blur-md justify-center items-center'
+        >
+          <Link href='/' className='text-white text-lg'>
             Startseite
           </Link>
-          <Link
-            href='/profil'
-            onClick={() => setMenuOpen(false)}
-            className='text-white'
-          >
+          <Link href='/profil' className='text-white text-lg'>
             Über mich
           </Link>
-          <Link
-            href='/leistungen'
-            onClick={() => setMenuOpen(false)}
-            className='text-white'
-          >
+          <Link href='/leistungen' className='text-white text-lg'>
             Leistungen
           </Link>
-          <Link
-            href='/projekte'
-            onClick={() => setMenuOpen(false)}
-            className='text-white'
-          >
+          <Link href='/projekte' className='text-white text-lg'>
             Projekte
           </Link>
-          <Link
-            href='/kontakt'
-            onClick={() => setMenuOpen(false)}
-            className='text-white'
-          >
+          <Link href='/kontakt' className='text-white text-lg'>
             Kontakt
           </Link>
         </div>
