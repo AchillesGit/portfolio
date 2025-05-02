@@ -19,7 +19,7 @@ export default function KontaktPage() {
   };
 
   return (
-    <div className='flex justify-center fade-in'>
+    <div className='flex justify-center fade-in md:grow md:items-center'>
       <div className='w-full max-w-lg rounded-2xl shadow-xl p-8'>
         <h1 className='text-4xl font-extrabold mb-6 text-gray-100'>Kontakt</h1>
         <p className='text-lg mb-6'>
