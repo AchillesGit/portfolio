@@ -4,9 +4,7 @@ import "./globals.css";
 import Header from "./components/header";
 import { Footer } from "./components/footer";
 import Script from "next/script";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { SpeedInsights } from "@vercel/speed-insights/next";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
@@ -108,6 +106,8 @@ export default function RootLayout({
         <Header />
         <main className='flex-1 flex flex-col'>{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />s
       </body>
     </html>
   );
