@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "./components/header";
 import { Footer } from "./components/footer";
 import Script from "next/script";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
