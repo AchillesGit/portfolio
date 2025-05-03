@@ -10,8 +10,37 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Dennis Sadiki",
-  description: "",
+  title: "Dennis Sadiki - Fullstack Webentwickler Portfolio",
+  description:
+    "Entdecken Sie das Portfolio von Dennis Sadiki, einem erfahrenen Fullstack-Webentwickler mit Fokus auf moderne Technologien wie React, Next.js und Tailwind CSS.",
+  keywords:
+    "Dennis Sadiki, Fullstack Webentwickler, React, Next.js, Tailwind CSS, Webentwicklung, Portfolio, Projekte, Softwareentwicklung, Deutschland",
+  authors: [{ name: "Dennis Sadiki" }],
+  openGraph: {
+    title: "Dennis Sadiki - Fullstack Webentwickler Portfolio",
+    description:
+      "Erfahren Sie mehr über die Projekte und Fähigkeiten von Dennis Sadiki, einem Experten für moderne Webentwicklung.",
+    url: "https://www.dennissadiki.de/",
+    siteName: "Dennis Sadiki Portfolio",
+    images: [
+      {
+        url: "/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Dennis Sadiki Portfolio Logo",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dennis Sadiki - Fullstack Webentwickler Portfolio",
+    description:
+      "Einblicke in die Arbeit und Projekte von Dennis Sadiki, einem erfahrenen Webentwickler.",
+    creator: "@DennisSadiki",
+    images: ["/android-chrome-512x512.png"],
+  },
 };
 
 export default function RootLayout({
