@@ -89,6 +89,10 @@ export default function RootLayout({
     <html lang='de' className={geistSans.className}>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
+        <meta
+          name='google-site-verification'
+          content='w-sj4g4BXwcZpGl3cZKr2Mk5YqY84uVCdyyn6s_3_Vo'
+        />
         <Script
           id='person-jsonld'
           type='application/ld+json'
