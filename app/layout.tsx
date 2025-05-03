@@ -93,6 +93,10 @@ export default function RootLayout({
           name='google-site-verification'
           content='w-sj4g4BXwcZpGl3cZKr2Mk5YqY84uVCdyyn6s_3_Vo'
         />
+        <meta
+          name='google-site-verification'
+          content='qbJJzEmNK_PCqjzW9v-6Afd-xAE_4Aqrs3hB1KD9OMI'
+        />
         <Script
           id='person-jsonld'
           type='application/ld+json'
