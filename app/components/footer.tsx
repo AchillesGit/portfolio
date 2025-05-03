@@ -35,7 +35,7 @@ export const Footer = () => {
           <FaLinkedin size={24} />
         </Link>
         <Link
-          href='/kontakt'
+          href='mailto:kontakt@dennissadiki.de'
           aria-label='Kontakt'
           className='hover:text-white transition-colors'
         >

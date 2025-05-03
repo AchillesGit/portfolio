@@ -18,7 +18,7 @@ export default function Impressum() {
         <br />
         Telefon: +49 1525 8667891
         <br />
-        E-Mail: dennisadiki@gmail.com
+        E-Mail: kontakt@dennissadiki.de
         <br />
       </p>
       <p className='mb-4'>
