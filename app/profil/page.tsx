@@ -66,9 +66,9 @@ export default function About() {
           </p>
 
           <p className='text-lg'>
-            Mich motiviert das kreative Erschaffen – Produkte mit echtem
-            Mehrwert. Dabei halte ich meinen Tech-Stack aktuell und Best
-            Practices stets im Blick.
+            Ich liebe es, kreative Ideen in wertvolle Produkte zu verwandeln.
+            Ein moderner Tech-Stack und der Blick für Best Practices sind für
+            mich selbstverständlich.
           </p>
 
           <p className='text-lg'>
