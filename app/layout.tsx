@@ -115,7 +115,7 @@ export default function RootLayout({
         <main className='flex-1 flex flex-col'>{children}</main>
         <Footer />
         <Analytics />
-        <SpeedInsights />s
+        <SpeedInsights />
       </body>
     </html>
   );
