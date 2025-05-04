@@ -12,7 +12,7 @@ export const EmployerMarquee = () => {
       <h2 className='text-center text-2xl font-bold mb-6 px-8'>
         Diese Unternehmen habe ich bereits bei Projekten unterstützt
       </h2>
-      <Marquee gradient={false} speed={50} pauseOnHover={true} autoFill>
+      <Marquee gradient={false} speed={70} autoFill>
         {employers.map((name, index) => (
           <div
             key={index}
