@@ -83,6 +83,18 @@ export default function KontaktPage() {
           >
             {isPending ? "Senden…" : "Senden"}
           </button>
+          <p className='text-sm text-gray-400'>
+            Mit Absenden des Formulars erklärst Du Dich mit meiner{" "}
+            <a
+              href='/datenschutz'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-400 underline hover:text-blue-600'
+            >
+              Datenschutzerklärung
+            </a>{" "}
+            einverstanden.
+          </p>
         </form>
 
         {status === "success" && (
